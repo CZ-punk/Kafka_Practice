@@ -1,0 +1,18 @@
+package com.spartacoding.msa.order.events;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+import java.math.BigDecimal;
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+public class OrderCreatedEvent {
+
+    private Long id;
+    private String productId;
+    private int quantity;
+    private BigDecimal totalPrice;
+}
